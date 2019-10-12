@@ -27,17 +27,9 @@ module Header = {
   [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
   external make: _ => React.element = "Header";
 };
-module ReloadInstructions = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
-  external make: _ => React.element = "ReloadInstructions";
-};
 module LearnMoreLinks = {
   [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
   external make: _ => React.element = "LearnMoreLinks";
-};
-module DebugInstructions = {
-  [@react.component] [@bs.module "react-native/Libraries/NewAppScreen"]
-  external make: _ => React.element = "DebugInstructions";
 };
 
 /*
@@ -95,8 +87,9 @@ let app = () =>
         <View style={styles##body}>
           <View style={styles##sectionContainer}>
             <Text style={styles##sectionTitle}>
-              "Step One"->React.string
+              "Step Two"->React.string
             </Text>
+            <Icon name="github" size=24 />
             <Text style={styles##sectionDescription}>
               "Edit "->React.string
               <Text style={styles##highlight}>
@@ -104,20 +97,6 @@ let app = () =>
               </Text>
               " to change this screen and then come back to see your edits."
               ->React.string
-            </Text>
-          </View>
-          <View style={styles##sectionContainer}>
-            <Text style={styles##sectionTitle}>
-              "See Your Changes"->React.string
-            </Text>
-            <Text style={styles##sectionDescription}>
-              <ReloadInstructions />
-            </Text>
-          </View>
-          <View style={styles##sectionContainer}>
-            <Text style={styles##sectionTitle}> "Debug"->React.string </Text>
-            <Text style={styles##sectionDescription}>
-              <DebugInstructions />
             </Text>
           </View>
           <View style={styles##sectionContainer}>
