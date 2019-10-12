@@ -90,6 +90,12 @@ let app = () =>
               "Step Two"->React.string
             </Text>
             <Icon name="github" size=24 />
+            <IconButton
+              name="github"
+              backgroundColor="black"
+              onPress={_ => Js.log("this is reason")}>
+              "Login with Github"->React.string
+            </IconButton>
             <Text style={styles##sectionDescription}>
               "Edit "->React.string
               <Text style={styles##highlight}>
