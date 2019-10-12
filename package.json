@@ -2,14 +2,22 @@
   "name": "octofish",
   "version": "0.0.1",
   "private": true,
+  "description": "Find good first issues in Github",
+  "repository": "git@github.com:Naturalclar/Octofish.git",
+  "license": "MIT",
+  "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
+  "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "re:build": "bsb -clean-world -make-world",
     "re:clean": "bsb -clean-world",
     "re:watch": "bsb -clean-world -make-world -w",
-    "re:build": "bsb -clean-world -make-world",
+    "start": "react-native start",
     "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
   },
   "dependencies": {
     "react": "^16.8.0",
@@ -26,13 +34,5 @@
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "^0.51.1",
     "react-test-renderer": "16.8.1"
-  },
-  "jest": {
-    "preset": "react-native"
-  },
-  "description": "Find good first issues in Github",
-  "main": "index.js",
-  "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
-  "license": "MIT",
-  "repository": "git@github.com:Naturalclar/Octofish.git"
+  }
 }
