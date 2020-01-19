@@ -84,7 +84,8 @@ let app = () =>
         //      <Text style={styles##footer}>Engine: Hermes</Text>
         //    </View>
         //  )}
-        <View style={styles##body}>
+        <ReactNativeLinearGradient
+          colors=[|"#faa", "#afa"|] style={styles##body}>
           <View style={styles##sectionContainer}>
             <Text style={styles##sectionTitle}>
               "Step Two"->React.string
@@ -148,7 +149,7 @@ let app = () =>
             </Text>
           </View>
           <LearnMoreLinks />
-        </View>
+        </ReactNativeLinearGradient>
       </ScrollView>
     </SafeAreaView>
   </>;
